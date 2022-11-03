@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Coda', cursive;
+}
+
+/*Cabeçalho*/
+body{
+    background: linear-gradient(45deg, #3D3D3D, #84B026, #217373, #173540, #0FC2C0);
+    background-size: 300% 300%;
+    font-size: 100%;
+    animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.conteudo-cabecalho-menu {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 9px;
+    text-align: center;
+    border-bottom: 2px solid #ffffff30;
+    background: #ffffff10;
+    backdrop-filter:blur(10px);
+}
+
+.conteudo-cabecalho-menu-escrito {
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-cabecalho-itens {
+    margin: 12px;
+    font-size: 18px;
+    color: #EAE4E4;
+}
+
+/*Conteúdo Principal*/
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 110px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    line-height: 60px;
+}
+
+.conteudo-principal-titulo {
+    font-size: 55px;
+    color: #EAE4E4;
+}
+
+.conteudo-principal-subtitulo {
+    font-size: 40px;
+    color: #000;
+}
+
+.conteudo-principal-escrito {
+    font-size: 30px;
+    color: #000;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    line-height: center;
+    width: 100%;
+}
+
+.botoes-principais {
+    background-color: #173540;
+    border: 2px solid #3D3D3D;
+    font-size: 15px;
+    border-radius: 15px;
+    color:#EAE4E4;
+    display: block;
+    width: 100%;
+    cursor:pointer;
+    text-align: center;
+    height: 40px;
+    margin: 5px;
+}
+#buttonLinkedin:hover {
+    transition: 1s;
+    background-color: #ffffff10;
+    border: 2px solid #173540;
+    color: #FFF;
+}
+
+#buttonGit:hover {
+    transition: 1s;
+    background-color: #ffffff10;
+    border: 2px solid #173540;
+    color: #FFF;
+}
+#buttonLinkedin{
+    margin-left: -0.5px;
+}
+#buttonGit{
+    margin-right: -1px;
+}
+
+.imagem-principal {
+    height: 480px;
+    animation: is-bouncing 1s ease-in-out alternate infinite;
+    color: t;
+}
+
+@keyframes is-bouncing {
+    to {
+        transform: translateY(30px);
+    }
+}
+
+/*Sobre mim*/
