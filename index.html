@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio VM</title>
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header>
+            <nav class="conteudo-cabecalho-menu">
+                <img id="logo" src="img/logo.png" alt="Logo do Vitão">
+                <div class="conteudo-cabecalho-menu-escrito">
+                    <a class="conteudo-cabecalho-itens">Início</a>
+                    <a class="conteudo-cabecalho-itens">Sobre mim</a>
+                    <a class="conteudo-cabecalho-itens">Habilidades</a>
+                    <a class="conteudo-cabecalho-itens">Projetos</a>
+                </div>
+            </nav>
+    </header>
+
+    <!--Conteúdo Principal-->
+    <main class="conteudo">
+        <div class="conteudo-principal">
+            <h1 class="conteudo-principal-titulo">Olá, mundo!</h1>
+            <h2 class="conteudo-principal-subtitulo">Eu me chamo Victor Mattos.</h2>
+            <h3 class="conteudo-principal-escrito">Desenvolvedor Front-end</h3>
+            <div class="botoes">
+                <button id="buttonLinkedin" class="botoes-principais" onclick="buttonHome(document.getElementById('buttonLinkedin'))">Linkedin</button>
+                <button id="buttonGit" class="botoes-principais" onclick="buttonHome(document.getElementById('buttonGit'))">GitHub</button>
+            </div>
+        </div>
+        <img class="imagem-principal" src="img/img1.png" alt="Imagem ilustrativa">
+        
+        <script>
+            function buttonHome(event){
+                if(event.id === "buttonLinkedin"){
+                    window.open("https://www.linkedin.com/in/victor-mattos-9a2b1a1b2/");
+                }else {
+                    window.open("https://github.com/vhmattos");
+                }
+                
+            }
+        </script>
+    </main>
+
+    <!--Sobre mim-->
+    <section class="sobremim">
+        
+        <div class="sobremim-conteudo">
+            <h1 class="sobremim-titulo">Sobre mim</h1>
+            <p class="sobremim-paragrafo">Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Si num tem leite então bota uma pinga aí cumpadi!Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Suco de cevadiss deixa as pessoas mais interessantis.<br  >
+
+                Quem num gosta di mé, boa gentis num é.Quem num gosta di mim que vai caçá sua turmis!Viva Forevis aptent taciti sociosqu ad litora torquent.Leite de capivaris, leite de mula manquis sem cabeça.
+                
+                Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!Viva Forevis aptent taciti sociosqu ad litora torquent.Si num tem leite então bota uma pinga aí cumpadi!Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.
+                
+                Manduma pindureta quium dia nois paga.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Casamentiss faiz malandris se pirulitá.Si num tem leite então bota uma pinga aí cumpadi!</p>
+        </div>
+
+        <img class="imagem-sobremim" src="img/img2.png" alt="Imagem ilustrativa">
+
+    </section>
+
+
+
+    <!--Rodapé-->
+    <footer>
+
+    </footer>
+</body>
+</html>
